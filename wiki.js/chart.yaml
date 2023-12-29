@@ -2,4 +2,4 @@ dependencies:
   - name: wiki.js
     version: 0.1.0
     repository: https://charts.js.wiki
-    namespace: wiki.js
+    namespace: wiki
