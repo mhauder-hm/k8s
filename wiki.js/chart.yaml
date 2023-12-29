@@ -5,23 +5,22 @@
 #     namespace: wiki
 
 apiVersion: apps/v1
-kind: Deployment
+kind: Application
 metadata:
   name: wiki-deployment
   namespace: wiki
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: wiki
-  template:
-    metadata:
-      labels:
-        app: wiki
   project: default
+  # selector:
+  #   matchLabels:
+  #     app: wiki
+  # template:
+  #   metadata:
+  #     labels:
+  #       app: wiki
   source:
-    chart: wiki
     repoURL: https://charts.js.wiki
+    chart: requarks/wiki
     targetRevision: 0.1.0
     helm:
       releaseName: wiki
