@@ -15,8 +15,9 @@ spec:
   #       app: wiki
   source:
     repoURL: https://charts.js.wiki
-    chart: requarks/wiki
-    targetRevision: latest
+    # chart: requarks/wiki
+    chart: wiki
+    targetRevision: 2.2.20
     helm:
       releaseName: wiki
       # valueFiles:
