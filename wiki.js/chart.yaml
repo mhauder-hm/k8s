@@ -11,6 +11,9 @@ metadata:
   namespace: wiki
 spec:
   replicas: 1
+  selector:
+  matchLabels:
+      app: wiki.js
   project: default
   source:
     chart: wiki
