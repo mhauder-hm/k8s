@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: 2.2.0
+  name: wiki
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -16,7 +16,7 @@ spec:
   source:
     repoURL: https://charts.js.wiki
     chart: requarks/wiki
-    targetRevision: HEAD
+    targetRevision: 2.2.0
     helm:
       releaseName: wiki
       valueFiles:
