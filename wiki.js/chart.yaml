@@ -23,7 +23,9 @@ spec:
     chart: requarks/wiki
     targetRevision: 0.1.0
     helm:
-      releaseName: wiki
+      releaseName: wiki.js
+      valueFiles:
+        - values.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: wiki
