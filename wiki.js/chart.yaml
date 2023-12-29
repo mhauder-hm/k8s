@@ -14,6 +14,10 @@ spec:
   selector:
   matchLabels:
       app: wiki.js
+  template:
+    metadata:
+      labels:
+        app: wiki.js
   project: default
   source:
     chart: wiki
