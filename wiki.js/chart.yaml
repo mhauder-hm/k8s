@@ -1,5 +1,5 @@
 dependencies: 
-  - name: wiki.js
+  - name: wiki_js
     version: 0.1.0
     repository: https://charts.js.wiki
     namespace: wiki
