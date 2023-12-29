@@ -17,7 +17,7 @@ spec:
   template:
     metadata:
       labels:
-        app: wiki.js
+        app: wiki
   project: default
   source:
     chart: wiki
