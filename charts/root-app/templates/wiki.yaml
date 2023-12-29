@@ -6,13 +6,6 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  # selector:
-  #   matchLabels:
-  #     app: wiki
-  # template:
-  #   metadata:
-  #     labels:
-  #       app: wiki
   source:
     repoURL: https://charts.js.wiki
     # chart: requarks/wiki
