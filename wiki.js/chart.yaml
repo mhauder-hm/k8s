@@ -19,8 +19,8 @@ spec:
   #     labels:
   #       app: wiki
   source:
-    repoURL: https://charts.js.wiki
-    chart: requarks/wiki
+    repoURL: https://charts.js.wiki/requarks
+    chart: wiki
     targetRevision: 0.1.0
     helm:
       releaseName: wiki.js
