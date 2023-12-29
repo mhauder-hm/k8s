@@ -1,6 +1,6 @@
 argo-cd:
   dex:
-    enabled: true
+    enabled: false
   notifications:
     enabled: false
   applicationSet:
@@ -10,4 +10,4 @@ argo-cd:
       - --insecure
   crds:
     # -- Install and upgrade CRDs
-    install: false
+    install: true

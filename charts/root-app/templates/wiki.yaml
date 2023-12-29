@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wiki
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  # selector:
+  #   matchLabels:
+  #     app: wiki
+  # template:
+  #   metadata:
+  #     labels:
+  #       app: wiki
+  source:
+    repoURL: https://charts.js.wiki
+    chart: requarks/wiki
+    targetRevision: 0.1.0
+    helm:
+      releaseName: wiki
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: wiki
