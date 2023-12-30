@@ -6,6 +6,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
+  replicas: 2
   source:
     repoURL: https://charts.js.wiki
     # chart: requarks/wiki
