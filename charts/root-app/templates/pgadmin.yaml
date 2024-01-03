@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://helm.runix.net
     chart: pgadmin4
-    # targetRevision: 25.3.1
+    targetRevision: 1.19.0
   destination:
     server: https://kubernetes.default.svc
     namespace: default
