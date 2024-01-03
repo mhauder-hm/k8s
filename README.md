@@ -43,6 +43,19 @@ A brief description of the project.
 
 1. Postgres has a kubernetes secret for the initial deployment. If helm chart in uninstalled, then the PVC and the PV need to be deleted manually.
 
+2. pgAdmin: PS D:\Code\k8s> helm install my-release runix/pgadmin4
+>>
+NAME: my-release
+LAST DEPLOYED: Wed Jan  3 18:16:40 2024
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+NOTES:
+1. Get the application URL by running these commands:
+  export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/name=pgadmin4,app.kubernetes.io/instance=my-release" -o jsonpath="{.items[0].metadata.name}")
+  echo "Visit http://127.0.0.1:8080 to use your application"
+  kubectl port-forward $POD_NAME 8080:80
+
 ## Contributing
 
 Guidelines on how to contribute to the project.
