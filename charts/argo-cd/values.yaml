@@ -10,4 +10,4 @@ argo-cd:
       - --insecure
   crds:
     # -- Install and upgrade CRDs
-    install: true
+    install: false
